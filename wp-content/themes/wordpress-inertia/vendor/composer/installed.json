@@ -1,0 +1,54 @@
+{
+    "packages": [
+        {
+            "name": "boxybird/inertia-wordpress",
+            "version": "v0.5.6",
+            "version_normalized": "0.5.6.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/boxybird/inertia-wordpress.git",
+                "reference": "10979f286a257046f3809de01ca8897be260d921"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/boxybird/inertia-wordpress/zipball/10979f286a257046f3809de01ca8897be260d921",
+                "reference": "10979f286a257046f3809de01ca8897be260d921",
+                "shasum": ""
+            },
+            "time": "2022-02-12T19:49:49+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "files": [
+                    "src/functions.php"
+                ],
+                "psr-4": {
+                    "BoxyBird\\Inertia\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Andrew Rhyand",
+                    "email": "hello@andrewrhyand.com"
+                }
+            ],
+            "description": "The WordPress adapter for Inertia.js",
+            "keywords": [
+                "inertia.js",
+                "plugin",
+                "wordpress"
+            ],
+            "support": {
+                "issues": "https://github.com/boxybird/inertia-wordpress/issues",
+                "source": "https://github.com/boxybird/inertia-wordpress/tree/v0.5.6"
+            },
+            "install-path": "../boxybird/inertia-wordpress"
+        }
+    ],
+    "dev": true,
+    "dev-package-names": []
+}

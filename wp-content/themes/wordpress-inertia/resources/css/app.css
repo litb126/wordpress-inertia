@@ -1,0 +1,175 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .text-white {
+    color: #f3f3f3;
+  }
+}
+
+body.admin-bar {
+  @apply -mt-8;
+}
+
+body {
+  @apply bg-slate-900;
+}
+
+.card-spacing {
+  @apply w-full mx-4 max-w-[calc(100%-2rem)] sm:max-w-[calc(50%-2rem)] lg:max-w-[calc(25%-2rem)];
+}
+
+.overlay {
+  @apply absolute inset-0 min-h-full min-w-full bg-black opacity-60 -z-10;
+}
+
+.prose {
+  @apply !w-full !max-w-none;
+}
+
+.prose {
+  @apply
+  prose-img:w-full
+	prose-img:h-auto;
+}
+
+.prose-white * {
+  @apply text-white;
+}
+
+.prose h1:first-child,
+.prose h2:first-child,
+.prose h3:first-child,
+.prose h4:first-child,
+.prose h5:first-child,
+.prose h6:first-child {
+  @apply mt-0;
+}
+
+.prose h1,
+.prose h2,
+.prose h3,
+.prose h4,
+.prose h5,
+.prose h6 {
+  @apply mb-6;
+}
+
+.prose h1 {
+  @apply text-4xl lg:text-6xl;
+}
+
+.prose h2 {
+  @apply text-4xl lg:text-5xl;
+}
+
+.prose h3, .prose h4 {
+  @apply text-3xl lg:text-4xl;
+}
+
+.prose h5, .prose h6 {
+  @apply text-2xl lg:text-3xl;
+}
+
+.prose-intro p {
+  @apply max-w-5xl;
+}
+
+
+/* WP Blocks */
+.wp-block-cover {
+  @apply rounded-md;
+}
+
+/* Make clicks pass-through */
+#nprogress {
+  @apply pointer-events-none;
+}
+
+#nprogress .bar {
+  @apply bg-black fixed z-50 top-0 left-0 w-full h-2;
+}
+
+/* Fancy blur effect */
+#nprogress .peg {
+  @apply block absolute right-0 w-20 h-full shadow-lg opacity-100;
+
+  -webkit-transform: rotate(3deg) translate(0px, -4px);
+  -ms-transform: rotate(3deg) translate(0px, -4px);
+  transform: rotate(3deg) translate(0px, -4px);
+}
+
+/* Remove these to get rid of the spinner */
+#nprogress .spinner {
+  @apply block fixed z-50 top-4 right-4;
+}
+
+#nprogress .spinner-icon {
+  @apply w-4 h-4 box-border border-2 border-transparent border-t-black border-l-black rounded-full;
+
+  -webkit-animation: nprogress-spinner 400ms linear infinite;
+  animation: nprogress-spinner 400ms linear infinite;
+}
+
+.nprogress-custom-parent {
+  @apply overflow-hidden relative;
+}
+
+.nprogress-custom-parent #nprogress .spinner,
+.nprogress-custom-parent #nprogress .bar {
+  @apply absolute;
+}
+
+@-webkit-keyframes nprogress-spinner {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes nprogress-spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.wpcf7-form {
+  @apply flex flex-col gap-4;
+}
+
+.wpcf7-form label {
+  @apply flex flex-col gap-2;
+}
+
+.wpcf7-form input, .wpcf7-form textarea {
+  @apply w-full text-black;
+}
+
+.wpcf7-response-output {
+  @apply text-center !m-0;
+}
+
+.wpcf7-submit {
+  @apply cursor-pointer !w-fit inline-flex no-underline items-center px-6 py-3 font-medium !text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-600 transition-all duration-300 max-sm:hidden bg-blue-500 hover:bg-blue-800;
+}
+
+.wpcf7-form .wpcf7-spinner {
+  @apply hidden;
+}
+
+.wpcf7-form.submitting .wpcf7-spinner {
+  @apply block bg-gray-400;
+}
+
+.wpcf7-form .submit-container {
+  @apply flex flex-row items-center;
+}
+
+.wpcf7-form .wpcf7-not-valid-tip {
+  @apply mt-2;
+}

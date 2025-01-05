@@ -1,0 +1,1 @@
+/Users/liambuxton/Repos/wordpress-inertia-starter/wp-content/plugins/query-monitor/wp-content/db.php

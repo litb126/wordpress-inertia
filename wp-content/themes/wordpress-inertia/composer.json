@@ -1,0 +1,14 @@
+{
+    "name": "boxybird/wordpress-inertia-demo-theme",
+    "description": "A WordPress theme built with Inertia.js",
+    "type": "wordpress-theme",
+    "require": {
+        "php": "^7.4|^8.0",
+        "boxybird/inertia-wordpress": "^0.5.6"
+    },
+    "autoload": {
+        "psr-4": {
+            "BoxyBird\\": "src/"
+        }
+    }
+}
